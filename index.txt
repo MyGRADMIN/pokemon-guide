@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Beginner's Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            background-image: url('https://placehold.co/1920x1080/E0E7FF/555?text=Poke+Background');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .card-container {
+            background-color: #fff;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        .rarity-symbol {
+            font-size: 1.5rem;
+            line-height: 1;
+            margin-right: 0.5rem;
+            display: inline-block;
+            width: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="card-container max-w-4xl mx-auto p-6 md:p-10 my-8">
+        <header class="text-center mb-10">
+            <h1 class="text-5xl font-extrabold text-red-600 tracking-tight">
+                Pokémon Beginner's Guide
+            </h1>
+            <p class="mt-2 text-xl text-gray-600">
+                Identification, Rarity, and How to Play
+            </p>
+        </header>
+
+        <!-- Rarity Section -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-indigo-700 border-b-2 pb-2 mb-4">
+                Card Identification & Rarity Symbols
+            </h2>
+            <p class="text-gray-700 mb-6">
+                Every Pokémon card has a small symbol, usually at the bottom corner near the card number, that tells you its rarity.
+            </p>
+
+            <div class="space-y-3">
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg shadow-sm">
+                    <span class="rarity-symbol text-black font-bold">⚫</span>
+                    <strong class="text-gray-800 w-24">Common:</strong>
+                    <span class="text-gray-600">You’ll find lots of these cards.</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg shadow-sm">
+                    <span class="rarity-symbol text-gray-600 font-bold">◆</span>
+                    <strong class="text-gray-800 w-24">Uncommon:</strong>
+                    <span class="text-gray-600">A little harder to find.</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg shadow-sm">
+                    <span class="rarity-symbol text-yellow-500 font-bold">★</span>
+                    <strong class="text-gray-800 w-24">Rare:</strong>
+                    <span class="text-gray-600">Harder to find — usually shiny or strong!</span>
+                </div>
+                <div class="flex items-center p-3 bg-yellow-50 rounded-lg shadow-sm">
+                    <span class="rarity-symbol text-yellow-600 font-bold">✨</span>
+                    <strong class="text-gray-800 w-24">Holo:</strong>
+                    <span class="text-gray-600">The Pokémon picture is shiny.</span>
+                </div>
+                <div class="flex items-center p-3 bg-yellow-50 rounded-lg shadow-sm">
+                    <span class="rarity-symbol text-blue-500 font-bold">✨⬜</span>
+                    <strong class="text-gray-800 w-24">Reverse Holo:</strong>
+                    <span class="text-gray-600">The card background is shiny instead of the Pokémon.</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Special Cards Section -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-indigo-700 border-b-2 pb-2 mb-4">
+                Special Cards (EX, GX, V, VMAX, MEGA)
+            </h2>
+            <p class="text-gray-700 mb-6">
+                These cards are extra powerful and have unique rules or abilities.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 border border-indigo-200 rounded-lg bg-indigo-50">
+                    <strong class="text-lg text-indigo-800">EX:</strong> 
+                    <span class="text-gray-700">Extra powerful Pokémon with big attacks.</span>
+                </div>
+                <div class="p-4 border border-indigo-200 rounded-lg bg-indigo-50">
+                    <strong class="text-lg text-indigo-800">GX:</strong> 
+                    <span class="text-gray-700">Special once-per-game attack card.</span>
+                </div>
+                <div class="p-4 border border-indigo-200 rounded-lg bg-indigo-50">
+                    <strong class="text-lg text-indigo-800">V:</strong> 
+                    <span class="text-gray-700">Strong modern Pokémon with high HP.</span>
+                </div>
+                <div class="p-4 border border-indigo-200 rounded-lg bg-indigo-50">
+                    <strong class="text-lg text-indigo-800">VMAX:</strong> 
+                    <span class="text-gray-700">Gigantic evolved version of V cards.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section>
+            <h2 class="text-3xl font-bold text-indigo-700 border-b-2 pb-2 mb-6">
+                How to Play Pokémon – Beginner Rules
+            </h2>
+            
+            <div class="flex items-center mb-4 text-xl">
+                <span class="text-3xl mr-3">🎯</span>
+                <strong class="text-red-700">Goal:</strong> Knock out your opponent’s Pokémon and win 6 Prize Cards!
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center text-gray-700 mb-6">
+                <div class="p-3 bg-green-100 rounded-lg"><span class="text-xl">👥</span> 2 Players</div>
+                <div class="p-3 bg-yellow-100 rounded-lg"><span class="text-xl">🎴</span> 60-Card Deck</div>
+                <div class="p-3 bg-blue-100 rounded-lg"><span class="text-xl">🧭</span> Setup & Bench</div>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-indigo-600 mb-3">
+                ▶️ Turn Steps
+            </h3>
+            <ol class="list-decimal list-inside space-y-3 pl-4 text-gray-700">
+                <li class="p-2 border-l-4 border-indigo-400 pl-3 bg-gray-50 rounded-r-lg">
+                    **Draw a card.**
+                </li>
+                <li class="p-2 border-l-4 border-indigo-400 pl-3 bg-gray-50 rounded-r-lg">
+                    Place a Pokémon onto your **Bench** (as many as you want).
+                </li>
+                <li class="p-2 border-l-4 border-indigo-400 pl-3 bg-gray-50 rounded-r-lg">
+                    Attach **one Energy card** per turn to one of your Pokémon.
+                </li>
+                <li class="p-2 border-l-4 border-indigo-400 pl-3 bg-gray-50 rounded-r-lg">
+                    Play **Trainer cards** to help your Pokémon (as many as you want).
+                </li>
+                <li class="p-2 border-l-4 border-indigo-400 pl-3 bg-gray-50 rounded-r-lg">
+                    **Attack** if you have enough Energy.
+                </li>
+                <li class="p-2 border-l-4 border-indigo-400 pl-3 bg-gray-50 rounded-r-lg">
+                    End your turn.
+                </li>
+            </ol>
+            
+            <h3 class="text-2xl font-semibold text-indigo-600 mt-6 mb-3">
+                🏆 Winning the Game
+            </h3>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>Collect all **6 Prize Cards**.</li>
+                <li>If your opponent has no Pokémon left in play.</li>
+            </ul>
+        </section>
+        
+        <footer class="mt-10 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
+            Guide content based on Pokémon Beginners Guide and Labels document.
+        </footer>
+    </div>
+
+</body>
+</html>
